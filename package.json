@@ -1,0 +1,37 @@
+{
+  "name": "modoc",
+  "description": "Modular Docco",
+  "version": "0.1.0",
+  "homepage": "https://github.com/pescalad/modoc",
+  "author": {
+    "name": "Pablo Escalada",
+    "email": "diesire@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pescalad/modoc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pescalad/modoc/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/pescalad/modoc/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/modoc",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt": "~0.4.1"
+  },
+  "keywords": []
+}
