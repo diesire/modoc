@@ -23,14 +23,14 @@ var modoc = require('../lib/modoc.js');
 */
 
 exports['awesome'] = {
-  setUp: function(done) {
-    // setup here
-    done();
-  },
-  'no args': function(test) {
-    test.expect(1);
-    // tests here
-    test.equal(modoc.awesome(), 'awesome', 'should be awesome.');
-    test.done();
-  },
+    setUp: function(done) {
+        // setup here
+        done();
+    },
+    'no args': function(test) {
+        test.expect(1);
+        // tests here
+        test.equal(modoc.version, '0.1.0', 'should be 0.1.0');
+        test.done();
+    },
 };
