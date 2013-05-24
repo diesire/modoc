@@ -33,5 +33,8 @@
     "grunt-contrib-watch": "~0.2.0",
     "grunt": "~0.4.1"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "docco": "~0.6.2"
+  }
 }
