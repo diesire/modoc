@@ -1,6 +1,7 @@
 'use strict';
 
-var modoc = require('../lib/modoc.js');
+var modoc = require('../lib/modoc.js'),
+    fs = require('fs');
 
 /*
   ======== A Handy Little Nodeunit Reference ========
@@ -26,6 +27,15 @@ exports['test'] = {
     setUp: function(done) {
         // setup here
         done();
+    },
+    'parse': function(test) {
+        var file = {};
+        file.name = './test/example.js';
+        file.content = fs.readFileSync(file.name).toString();
+        test.expect(1);
+        test.equal(modoc.parse(file.name, file.content).length, 1,
+            'should be 1');
+        test.done();
     },
     'version': function(test) {
         test.expect(1);
