@@ -27,7 +27,7 @@ exports['test'] = {
         // setup here
         done();
     },
-    'no args': function(test) {
+    'version': function(test) {
         test.expect(1);
         // tests here
         test.equal(modoc.version, '0.1.0', 'should be 0.1.0');
