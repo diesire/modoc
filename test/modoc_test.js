@@ -22,7 +22,7 @@ var modoc = require('../lib/modoc.js');
     test.ifError(value)
 */
 
-exports['awesome'] = {
+exports['test'] = {
     setUp: function(done) {
         // setup here
         done();
